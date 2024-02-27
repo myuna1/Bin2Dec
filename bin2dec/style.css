@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(14, 13, 13);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+h1 {
+    font-weight: bolder;
+    letter-spacing: 8px;
+    font-size: 3em;
+    margin-bottom: 25px;
+}
+
+.textfield {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.textfield > label {
+    font-size: 17px;
+    font-weight: 500px;
+}
+
+.textfield > input {
+    background-color: transparent;
+    border-color: #fff;
+    color: #fff;
+    border-style: solid;
+    width: 400px;
+    font-size: 30pt;
+    padding: 10px;
+    outline: none;
+    box-sizing: border-box;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+@media only screen and (max-width: 600px) {
+
+    main {
+        width: 95%;
+        height: auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .textfield > label, .error-message {
+        font-size: 0.9em;
+    }
+
+    .textfield > input {
+        width: 95%;
+        height: auto;
+        font-size: 2em;
+    }
+
+    .result {
+        font-size: 2.5em;
+    }
+}
